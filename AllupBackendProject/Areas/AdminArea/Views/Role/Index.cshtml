@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Identity 
+@model IList<IdentityRole>
+@{ ViewData["Title"] = "Index"; }
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<p>
+    <a asp-action="Update">Update</a>
+</p>
+@foreach (var item in Model)
+{
+<p>@item.Name</p>
+}
+
+
